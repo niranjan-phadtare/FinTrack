@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.dashboard {
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background: rgba(255,255,255,0.15);
+}
+
+.income { border-left: 5px solid #00ff99; }
+.expense { border-left: 5px solid #ff4d4d; }
+.balance { border-left: 5px solid #00c3ff; }
+
+.card p {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.transaction-box {
+    margin-bottom: 25px;
+}
+
+.transaction-box h2 {
+    margin-bottom: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+button {
+    background: #00c3ff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00ff99;
+}
+
+.list ul {
+    list-style: none;
+}
+
+.list li {
+    background: rgba(255,255,255,0.15);
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
